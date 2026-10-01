@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+build/
+dist/
+*.egg-info/
+data/raw/
+data/processed/
+data/rewires/
+data/language-corpus/
+runs/
+checkpoints/
+*.pt
+*.pth
+*.log

@@ -1,0 +1,18 @@
+{
+  "seed": 11,
+  "data_seed": 20260912,
+  "interface_seed": 20260912,
+  "steps": 64,
+  "readout_steps": 4,
+  "alpha": 0.5,
+  "gain": 1.0,
+  "input_amplitude": 1.0,
+  "temperature": 0.1,
+  "input_group_size": 64,
+  "output_group_size": 32,
+  "ordinal_lambda": 1.0,
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "gradient_clip": 1.0,
+  "microbatch_size": 128
+}

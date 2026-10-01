@@ -1,0 +1,1854 @@
+[
+  {
+    "topology": "anatomical",
+    "seed": 11,
+    "status": "complete",
+    "run": {
+      "epoch": 100,
+      "selectedEpoch": 100,
+      "updates": 2800
+    },
+    "graph": {
+      "dataset": "MaleCNS v1.0",
+      "node_policy": "annotated",
+      "selection": "superclass is assigned",
+      "published_neuron_count": 166691,
+      "neurons": 166700,
+      "raw_connection_rows": 151856684,
+      "selected_connection_rows_before_aggregation": 25582938,
+      "edges": 25582938,
+      "synaptic_contacts": 124177617,
+      "self_edges": 101,
+      "orientation": "rows are postsynaptic; cols are presynaptic",
+      "edge_threshold": null,
+      "annotations_sha256": "2177e246113e4cfbf1e7772ec37c6da1955ff22e8063d0b1f833101f99a9a3b2",
+      "edges_sha256": "e35da783d1c686b2b58b3b87cd6a403ae43bfcfba8bff28e08ef752c1a56afc1",
+      "graph_sha256": "e906f5f47da85b625c3941a411882d507ff7383c98097ac07819a83ee998266a"
+    },
+    "config": {
+      "seed": 11,
+      "data_seed": 20260912,
+      "interface_seed": 20260912,
+      "steps": 64,
+      "readout_steps": 4,
+      "alpha": 0.5,
+      "gain": 1.0,
+      "input_amplitude": 1.0,
+      "temperature": 0.1,
+      "input_group_size": 64,
+      "output_group_size": 32,
+      "ordinal_lambda": 1.0,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001,
+      "gradient_clip": 1.0,
+      "microbatch_size": 128,
+      "examples_per_update": 128,
+      "multiplication_mix": {
+        "nontrivial": 0.6,
+        "times_zero": 0.2,
+        "times_one": 0.2
+      },
+      "mode": "addition",
+      "max_epochs": 100,
+      "min_epochs": 20,
+      "patience": 15
+    },
+    "data": {
+      "trainingRows": 3584,
+      "validationRows": 775,
+      "testRows": 792,
+      "epochDefinition": "all addition training rows exactly once without replacement"
+    },
+    "baselines": {
+      "trainConstant": {
+        "answer": 99,
+        "count": 3584,
+        "accuracy": 0.022879464285714284,
+        "mae": 32.676339285714285
+      },
+      "validationConstant": {
+        "answer": 99,
+        "count": 775,
+        "accuracy": 0.01806451612903226,
+        "mae": 30.58967741935484
+      },
+      "testConstant": {
+        "answer": 99,
+        "count": 792,
+        "accuracy": 0.005050505050505051,
+        "mae": 32.74242424242424
+      }
+    },
+    "validationMetrics": {
+      "overall": {
+        "count": 775,
+        "accuracy": 0.983225806451613,
+        "mae": 0.07741935483870968
+      },
+      "+": {
+        "count": 775,
+        "accuracy": 0.983225806451613,
+        "mae": 0.07741935483870968
+      },
+      "no_ones_carry": {
+        "count": 442,
+        "accuracy": 0.9796380090497737,
+        "mae": 0.11764705882352941
+      },
+      "ones_carry": {
+        "count": 323,
+        "accuracy": 0.9876160990712074,
+        "mae": 0.02476780185758514
+      },
+      "sum_100": {
+        "count": 10,
+        "accuracy": 1.0,
+        "mae": 0.0
+      },
+      "losses": {
+        "loss": 0.20426528336540345,
+        "cross_entropy": 0.20332455244756514,
+        "ordinal": 0.0009407291260938491
+      }
+    },
+    "testMetrics": {
+      "overall": {
+        "count": 792,
+        "accuracy": 0.9722222222222222,
+        "mae": 0.07828282828282829
+      },
+      "+": {
+        "count": 792,
+        "accuracy": 0.9722222222222222,
+        "mae": 0.07828282828282829
+      },
+      "no_ones_carry": {
+        "count": 438,
+        "accuracy": 0.9680365296803652,
+        "mae": 0.0867579908675799
+      },
+      "ones_carry": {
+        "count": 334,
+        "accuracy": 0.9760479041916168,
+        "mae": 0.0718562874251497
+      },
+      "sum_100": {
+        "count": 20,
+        "accuracy": 1.0,
+        "mae": 0.0
+      },
+      "losses": {
+        "loss": 0.22956883606284556,
+        "cross_entropy": 0.22848040587974316,
+        "ordinal": 0.0010884344046276928
+      }
+    }
+  },
+  {
+    "topology": "anatomical",
+    "seed": 22,
+    "status": "complete",
+    "run": {
+      "epoch": 100,
+      "selectedEpoch": 100,
+      "updates": 2800
+    },
+    "graph": {
+      "dataset": "MaleCNS v1.0",
+      "node_policy": "annotated",
+      "selection": "superclass is assigned",
+      "published_neuron_count": 166691,
+      "neurons": 166700,
+      "raw_connection_rows": 151856684,
+      "selected_connection_rows_before_aggregation": 25582938,
+      "edges": 25582938,
+      "synaptic_contacts": 124177617,
+      "self_edges": 101,
+      "orientation": "rows are postsynaptic; cols are presynaptic",
+      "edge_threshold": null,
+      "annotations_sha256": "2177e246113e4cfbf1e7772ec37c6da1955ff22e8063d0b1f833101f99a9a3b2",
+      "edges_sha256": "e35da783d1c686b2b58b3b87cd6a403ae43bfcfba8bff28e08ef752c1a56afc1",
+      "graph_sha256": "e906f5f47da85b625c3941a411882d507ff7383c98097ac07819a83ee998266a"
+    },
+    "config": {
+      "seed": 22,
+      "data_seed": 20260912,
+      "interface_seed": 20260912,
+      "steps": 64,
+      "readout_steps": 4,
+      "alpha": 0.5,
+      "gain": 1.0,
+      "input_amplitude": 1.0,
+      "temperature": 0.1,
+      "input_group_size": 64,
+      "output_group_size": 32,
+      "ordinal_lambda": 1.0,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001,
+      "gradient_clip": 1.0,
+      "microbatch_size": 128,
+      "examples_per_update": 128,
+      "multiplication_mix": {
+        "nontrivial": 0.6,
+        "times_zero": 0.2,
+        "times_one": 0.2
+      },
+      "mode": "addition",
+      "max_epochs": 100,
+      "min_epochs": 20,
+      "patience": 15
+    },
+    "data": {
+      "trainingRows": 3584,
+      "validationRows": 775,
+      "testRows": 792,
+      "epochDefinition": "all addition training rows exactly once without replacement"
+    },
+    "baselines": {
+      "trainConstant": {
+        "answer": 99,
+        "count": 3584,
+        "accuracy": 0.022879464285714284,
+        "mae": 32.676339285714285
+      },
+      "validationConstant": {
+        "answer": 99,
+        "count": 775,
+        "accuracy": 0.01806451612903226,
+        "mae": 30.58967741935484
+      },
+      "testConstant": {
+        "answer": 99,
+        "count": 792,
+        "accuracy": 0.005050505050505051,
+        "mae": 32.74242424242424
+      }
+    },
+    "validationMetrics": {
+      "overall": {
+        "count": 775,
+        "accuracy": 0.9767741935483871,
+        "mae": 0.05290322580645161
+      },
+      "+": {
+        "count": 775,
+        "accuracy": 0.9767741935483871,
+        "mae": 0.05290322580645161
+      },
+      "no_ones_carry": {
+        "count": 442,
+        "accuracy": 0.9728506787330317,
+        "mae": 0.07013574660633484
+      },
+      "ones_carry": {
+        "count": 323,
+        "accuracy": 0.9814241486068112,
+        "mae": 0.030959752321981424
+      },
+      "sum_100": {
+        "count": 10,
+        "accuracy": 1.0,
+        "mae": 0.0
+      },
+      "losses": {
+        "loss": 0.24864751365876966,
+        "cross_entropy": 0.24749176675273526,
+        "ordinal": 0.001155749672212668
+      }
+    },
+    "testMetrics": {
+      "overall": {
+        "count": 792,
+        "accuracy": 0.9595959595959596,
+        "mae": 0.10984848484848485
+      },
+      "+": {
+        "count": 792,
+        "accuracy": 0.9595959595959596,
+        "mae": 0.10984848484848485
+      },
+      "no_ones_carry": {
+        "count": 438,
+        "accuracy": 0.9611872146118722,
+        "mae": 0.13013698630136986
+      },
+      "ones_carry": {
+        "count": 334,
+        "accuracy": 0.9550898203592815,
+        "mae": 0.08982035928143713
+      },
+      "sum_100": {
+        "count": 20,
+        "accuracy": 1.0,
+        "mae": 0.0
+      },
+      "losses": {
+        "loss": 0.27753812270333067,
+        "cross_entropy": 0.2763692814894397,
+        "ordinal": 0.0011688407658683982
+      }
+    }
+  },
+  {
+    "topology": "anatomical",
+    "seed": 33,
+    "status": "complete",
+    "run": {
+      "epoch": 100,
+      "selectedEpoch": 100,
+      "updates": 2800
+    },
+    "graph": {
+      "dataset": "MaleCNS v1.0",
+      "node_policy": "annotated",
+      "selection": "superclass is assigned",
+      "published_neuron_count": 166691,
+      "neurons": 166700,
+      "raw_connection_rows": 151856684,
+      "selected_connection_rows_before_aggregation": 25582938,
+      "edges": 25582938,
+      "synaptic_contacts": 124177617,
+      "self_edges": 101,
+      "orientation": "rows are postsynaptic; cols are presynaptic",
+      "edge_threshold": null,
+      "annotations_sha256": "2177e246113e4cfbf1e7772ec37c6da1955ff22e8063d0b1f833101f99a9a3b2",
+      "edges_sha256": "e35da783d1c686b2b58b3b87cd6a403ae43bfcfba8bff28e08ef752c1a56afc1",
+      "graph_sha256": "e906f5f47da85b625c3941a411882d507ff7383c98097ac07819a83ee998266a"
+    },
+    "config": {
+      "seed": 33,
+      "data_seed": 20260912,
+      "interface_seed": 20260912,
+      "steps": 64,
+      "readout_steps": 4,
+      "alpha": 0.5,
+      "gain": 1.0,
+      "input_amplitude": 1.0,
+      "temperature": 0.1,
+      "input_group_size": 64,
+      "output_group_size": 32,
+      "ordinal_lambda": 1.0,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001,
+      "gradient_clip": 1.0,
+      "microbatch_size": 128,
+      "examples_per_update": 128,
+      "multiplication_mix": {
+        "nontrivial": 0.6,
+        "times_zero": 0.2,
+        "times_one": 0.2
+      },
+      "mode": "addition",
+      "max_epochs": 100,
+      "min_epochs": 20,
+      "patience": 15
+    },
+    "data": {
+      "trainingRows": 3584,
+      "validationRows": 775,
+      "testRows": 792,
+      "epochDefinition": "all addition training rows exactly once without replacement"
+    },
+    "baselines": {
+      "trainConstant": {
+        "answer": 99,
+        "count": 3584,
+        "accuracy": 0.022879464285714284,
+        "mae": 32.676339285714285
+      },
+      "validationConstant": {
+        "answer": 99,
+        "count": 775,
+        "accuracy": 0.01806451612903226,
+        "mae": 30.58967741935484
+      },
+      "testConstant": {
+        "answer": 99,
+        "count": 792,
+        "accuracy": 0.005050505050505051,
+        "mae": 32.74242424242424
+      }
+    },
+    "validationMetrics": {
+      "overall": {
+        "count": 775,
+        "accuracy": 0.9922580645161291,
+        "mae": 0.03354838709677419
+      },
+      "+": {
+        "count": 775,
+        "accuracy": 0.9922580645161291,
+        "mae": 0.03354838709677419
+      },
+      "no_ones_carry": {
+        "count": 442,
+        "accuracy": 0.9886877828054299,
+        "mae": 0.05203619909502263
+      },
+      "ones_carry": {
+        "count": 323,
+        "accuracy": 0.9969040247678018,
+        "mae": 0.009287925696594427
+      },
+      "sum_100": {
+        "count": 10,
+        "accuracy": 1.0,
+        "mae": 0.0
+      },
+      "losses": {
+        "loss": 0.08040558549184953,
+        "cross_entropy": 0.07993305193320398,
+        "ordinal": 0.00047253312394698904
+      }
+    },
+    "testMetrics": {
+      "overall": {
+        "count": 792,
+        "accuracy": 0.9911616161616161,
+        "mae": 0.04040404040404041
+      },
+      "+": {
+        "count": 792,
+        "accuracy": 0.9911616161616161,
+        "mae": 0.04040404040404041
+      },
+      "no_ones_carry": {
+        "count": 438,
+        "accuracy": 0.9885844748858448,
+        "mae": 0.0593607305936073
+      },
+      "ones_carry": {
+        "count": 334,
+        "accuracy": 0.9940119760479041,
+        "mae": 0.017964071856287425
+      },
+      "sum_100": {
+        "count": 20,
+        "accuracy": 1.0,
+        "mae": 0.0
+      },
+      "losses": {
+        "loss": 0.09988954618121638,
+        "cross_entropy": 0.09928128108231708,
+        "ordinal": 0.0006082661036429033
+      }
+    }
+  },
+  {
+    "topology": "anatomical",
+    "seed": 44,
+    "status": "complete",
+    "run": {
+      "epoch": 100,
+      "selectedEpoch": 99,
+      "updates": 2800
+    },
+    "graph": {
+      "dataset": "MaleCNS v1.0",
+      "node_policy": "annotated",
+      "selection": "superclass is assigned",
+      "published_neuron_count": 166691,
+      "neurons": 166700,
+      "raw_connection_rows": 151856684,
+      "selected_connection_rows_before_aggregation": 25582938,
+      "edges": 25582938,
+      "synaptic_contacts": 124177617,
+      "self_edges": 101,
+      "orientation": "rows are postsynaptic; cols are presynaptic",
+      "edge_threshold": null,
+      "annotations_sha256": "2177e246113e4cfbf1e7772ec37c6da1955ff22e8063d0b1f833101f99a9a3b2",
+      "edges_sha256": "e35da783d1c686b2b58b3b87cd6a403ae43bfcfba8bff28e08ef752c1a56afc1",
+      "graph_sha256": "e906f5f47da85b625c3941a411882d507ff7383c98097ac07819a83ee998266a"
+    },
+    "config": {
+      "seed": 44,
+      "data_seed": 20260912,
+      "interface_seed": 20260912,
+      "steps": 64,
+      "readout_steps": 4,
+      "alpha": 0.5,
+      "gain": 1.0,
+      "input_amplitude": 1.0,
+      "temperature": 0.1,
+      "input_group_size": 64,
+      "output_group_size": 32,
+      "ordinal_lambda": 1.0,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001,
+      "gradient_clip": 1.0,
+      "microbatch_size": 128,
+      "examples_per_update": 128,
+      "multiplication_mix": {
+        "nontrivial": 0.6,
+        "times_zero": 0.2,
+        "times_one": 0.2
+      },
+      "mode": "addition",
+      "max_epochs": 100,
+      "min_epochs": 20,
+      "patience": 15
+    },
+    "data": {
+      "trainingRows": 3584,
+      "validationRows": 775,
+      "testRows": 792,
+      "epochDefinition": "all addition training rows exactly once without replacement"
+    },
+    "baselines": {
+      "trainConstant": {
+        "answer": 99,
+        "count": 3584,
+        "accuracy": 0.022879464285714284,
+        "mae": 32.676339285714285
+      },
+      "validationConstant": {
+        "answer": 99,
+        "count": 775,
+        "accuracy": 0.01806451612903226,
+        "mae": 30.58967741935484
+      },
+      "testConstant": {
+        "answer": 99,
+        "count": 792,
+        "accuracy": 0.005050505050505051,
+        "mae": 32.74242424242424
+      }
+    },
+    "validationMetrics": {
+      "overall": {
+        "count": 775,
+        "accuracy": 0.7651612903225806,
+        "mae": 0.3470967741935484
+      },
+      "+": {
+        "count": 775,
+        "accuracy": 0.7651612903225806,
+        "mae": 0.3470967741935484
+      },
+      "no_ones_carry": {
+        "count": 442,
+        "accuracy": 0.7828054298642534,
+        "mae": 0.4072398190045249
+      },
+      "ones_carry": {
+        "count": 323,
+        "accuracy": 0.7337461300309598,
+        "mae": 0.2755417956656347
+      },
+      "sum_100": {
+        "count": 10,
+        "accuracy": 1.0,
+        "mae": 0.0
+      },
+      "losses": {
+        "loss": 0.7578003310388134,
+        "cross_entropy": 0.7550329689056643,
+        "ordinal": 0.002767366692498927
+      }
+    },
+    "testMetrics": {
+      "overall": {
+        "count": 792,
+        "accuracy": 0.7878787878787878,
+        "mae": 0.26641414141414144
+      },
+      "+": {
+        "count": 792,
+        "accuracy": 0.7878787878787878,
+        "mae": 0.26641414141414144
+      },
+      "no_ones_carry": {
+        "count": 438,
+        "accuracy": 0.7853881278538812,
+        "mae": 0.2831050228310502
+      },
+      "ones_carry": {
+        "count": 334,
+        "accuracy": 0.7934131736526946,
+        "mae": 0.24251497005988024
+      },
+      "sum_100": {
+        "count": 20,
+        "accuracy": 0.75,
+        "mae": 0.3
+      },
+      "losses": {
+        "loss": 0.7843495727789522,
+        "cross_entropy": 0.7817339674390927,
+        "ordinal": 0.002615597375405181
+      }
+    }
+  },
+  {
+    "topology": "rewire-01",
+    "seed": 11,
+    "status": "complete",
+    "run": {
+      "epoch": 100,
+      "selectedEpoch": 99,
+      "updates": 2800
+    },
+    "graph": {
+      "dataset": "MaleCNS v1.0",
+      "node_policy": "annotated",
+      "selection": "superclass is assigned",
+      "published_neuron_count": 166691,
+      "neurons": 166700,
+      "raw_connection_rows": 151856684,
+      "selected_connection_rows_before_aggregation": 25582938,
+      "edges": 25582938,
+      "synaptic_contacts": 124177617,
+      "self_edges": 101,
+      "orientation": "rows are postsynaptic; cols are presynaptic",
+      "edge_threshold": null,
+      "annotations_sha256": "2177e246113e4cfbf1e7772ec37c6da1955ff22e8063d0b1f833101f99a9a3b2",
+      "edges_sha256": "e35da783d1c686b2b58b3b87cd6a403ae43bfcfba8bff28e08ef752c1a56afc1",
+      "graph_sha256": "19f6aea1174b9e23aee0b48a24bbab7b91daefea4c38193c7363cdd340f65ec9",
+      "sourceGraphSha256": "e906f5f47da85b625c3941a411882d507ff7383c98097ac07819a83ee998266a",
+      "control": "directed-degree-preserving-rewire",
+      "rewiring": {
+        "acceptedSwaps": 127914690,
+        "attemptedSwaps": 129651983,
+        "seed": 20260913,
+        "swapsPerEdge": 5,
+        "edgeOverlapFraction": 0.005942593458186859,
+        "inOutDegreesPreserved": true,
+        "duplicates": 0,
+        "selfLoops": 101,
+        "selfLoopPolicy": "existing self-loops fixed; no new self-loops",
+        "mixingNote": "finite double-edge-swap null; not claimed to be a uniform random graph"
+      }
+    },
+    "config": {
+      "seed": 11,
+      "data_seed": 20260912,
+      "interface_seed": 20260912,
+      "steps": 64,
+      "readout_steps": 4,
+      "alpha": 0.5,
+      "gain": 1.0,
+      "input_amplitude": 1.0,
+      "temperature": 0.1,
+      "input_group_size": 64,
+      "output_group_size": 32,
+      "ordinal_lambda": 1.0,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001,
+      "gradient_clip": 1.0,
+      "microbatch_size": 128,
+      "examples_per_update": 128,
+      "multiplication_mix": {
+        "nontrivial": 0.6,
+        "times_zero": 0.2,
+        "times_one": 0.2
+      },
+      "mode": "addition",
+      "max_epochs": 100,
+      "min_epochs": 20,
+      "patience": 15
+    },
+    "data": {
+      "trainingRows": 3584,
+      "validationRows": 775,
+      "testRows": 792,
+      "epochDefinition": "all addition training rows exactly once without replacement"
+    },
+    "baselines": {
+      "trainConstant": {
+        "answer": 99,
+        "count": 3584,
+        "accuracy": 0.022879464285714284,
+        "mae": 32.676339285714285
+      },
+      "validationConstant": {
+        "answer": 99,
+        "count": 775,
+        "accuracy": 0.01806451612903226,
+        "mae": 30.58967741935484
+      },
+      "testConstant": {
+        "answer": 99,
+        "count": 792,
+        "accuracy": 0.005050505050505051,
+        "mae": 32.74242424242424
+      }
+    },
+    "validationMetrics": {
+      "overall": {
+        "count": 775,
+        "accuracy": 0.3664516129032258,
+        "mae": 0.6748387096774193
+      },
+      "+": {
+        "count": 775,
+        "accuracy": 0.3664516129032258,
+        "mae": 0.6748387096774193
+      },
+      "no_ones_carry": {
+        "count": 442,
+        "accuracy": 0.36425339366515835,
+        "mae": 0.6945701357466063
+      },
+      "ones_carry": {
+        "count": 323,
+        "accuracy": 0.37770897832817335,
+        "mae": 0.6408668730650154
+      },
+      "sum_100": {
+        "count": 10,
+        "accuracy": 0.1,
+        "mae": 0.9
+      },
+      "losses": {
+        "loss": 1.3072802497494604,
+        "cross_entropy": 1.3028099036985827,
+        "ordinal": 0.004470318731581492
+      }
+    },
+    "testMetrics": {
+      "overall": {
+        "count": 792,
+        "accuracy": 0.6641414141414141,
+        "mae": 0.4128787878787879
+      },
+      "+": {
+        "count": 792,
+        "accuracy": 0.6641414141414141,
+        "mae": 0.4128787878787879
+      },
+      "no_ones_carry": {
+        "count": 438,
+        "accuracy": 0.6735159817351598,
+        "mae": 0.4452054794520548
+      },
+      "ones_carry": {
+        "count": 334,
+        "accuracy": 0.6736526946107785,
+        "mae": 0.3532934131736527
+      },
+      "sum_100": {
+        "count": 20,
+        "accuracy": 0.3,
+        "mae": 0.7
+      },
+      "losses": {
+        "loss": 1.0787507548476711,
+        "cross_entropy": 1.0755105235359885,
+        "ordinal": 0.00324022060617654
+      }
+    }
+  },
+  {
+    "topology": "rewire-01",
+    "seed": 22,
+    "status": "complete",
+    "run": {
+      "epoch": 100,
+      "selectedEpoch": 99,
+      "updates": 2800
+    },
+    "graph": {
+      "dataset": "MaleCNS v1.0",
+      "node_policy": "annotated",
+      "selection": "superclass is assigned",
+      "published_neuron_count": 166691,
+      "neurons": 166700,
+      "raw_connection_rows": 151856684,
+      "selected_connection_rows_before_aggregation": 25582938,
+      "edges": 25582938,
+      "synaptic_contacts": 124177617,
+      "self_edges": 101,
+      "orientation": "rows are postsynaptic; cols are presynaptic",
+      "edge_threshold": null,
+      "annotations_sha256": "2177e246113e4cfbf1e7772ec37c6da1955ff22e8063d0b1f833101f99a9a3b2",
+      "edges_sha256": "e35da783d1c686b2b58b3b87cd6a403ae43bfcfba8bff28e08ef752c1a56afc1",
+      "graph_sha256": "19f6aea1174b9e23aee0b48a24bbab7b91daefea4c38193c7363cdd340f65ec9",
+      "sourceGraphSha256": "e906f5f47da85b625c3941a411882d507ff7383c98097ac07819a83ee998266a",
+      "control": "directed-degree-preserving-rewire",
+      "rewiring": {
+        "acceptedSwaps": 127914690,
+        "attemptedSwaps": 129651983,
+        "seed": 20260913,
+        "swapsPerEdge": 5,
+        "edgeOverlapFraction": 0.005942593458186859,
+        "inOutDegreesPreserved": true,
+        "duplicates": 0,
+        "selfLoops": 101,
+        "selfLoopPolicy": "existing self-loops fixed; no new self-loops",
+        "mixingNote": "finite double-edge-swap null; not claimed to be a uniform random graph"
+      }
+    },
+    "config": {
+      "seed": 22,
+      "data_seed": 20260912,
+      "interface_seed": 20260912,
+      "steps": 64,
+      "readout_steps": 4,
+      "alpha": 0.5,
+      "gain": 1.0,
+      "input_amplitude": 1.0,
+      "temperature": 0.1,
+      "input_group_size": 64,
+      "output_group_size": 32,
+      "ordinal_lambda": 1.0,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001,
+      "gradient_clip": 1.0,
+      "microbatch_size": 128,
+      "examples_per_update": 128,
+      "multiplication_mix": {
+        "nontrivial": 0.6,
+        "times_zero": 0.2,
+        "times_one": 0.2
+      },
+      "mode": "addition",
+      "max_epochs": 100,
+      "min_epochs": 20,
+      "patience": 15
+    },
+    "data": {
+      "trainingRows": 3584,
+      "validationRows": 775,
+      "testRows": 792,
+      "epochDefinition": "all addition training rows exactly once without replacement"
+    },
+    "baselines": {
+      "trainConstant": {
+        "answer": 99,
+        "count": 3584,
+        "accuracy": 0.022879464285714284,
+        "mae": 32.676339285714285
+      },
+      "validationConstant": {
+        "answer": 99,
+        "count": 775,
+        "accuracy": 0.01806451612903226,
+        "mae": 30.58967741935484
+      },
+      "testConstant": {
+        "answer": 99,
+        "count": 792,
+        "accuracy": 0.005050505050505051,
+        "mae": 32.74242424242424
+      }
+    },
+    "validationMetrics": {
+      "overall": {
+        "count": 775,
+        "accuracy": 0.42451612903225805,
+        "mae": 0.6348387096774194
+      },
+      "+": {
+        "count": 775,
+        "accuracy": 0.42451612903225805,
+        "mae": 0.6348387096774194
+      },
+      "no_ones_carry": {
+        "count": 442,
+        "accuracy": 0.41855203619909503,
+        "mae": 0.669683257918552
+      },
+      "ones_carry": {
+        "count": 323,
+        "accuracy": 0.4148606811145511,
+        "mae": 0.6068111455108359
+      },
+      "sum_100": {
+        "count": 10,
+        "accuracy": 1.0,
+        "mae": 0.0
+      },
+      "losses": {
+        "loss": 1.2548329880929763,
+        "cross_entropy": 1.2505513420412617,
+        "ordinal": 0.004281644330870721
+      }
+    },
+    "testMetrics": {
+      "overall": {
+        "count": 792,
+        "accuracy": 0.6363636363636364,
+        "mae": 0.44823232323232326
+      },
+      "+": {
+        "count": 792,
+        "accuracy": 0.6363636363636364,
+        "mae": 0.44823232323232326
+      },
+      "no_ones_carry": {
+        "count": 438,
+        "accuracy": 0.632420091324201,
+        "mae": 0.4954337899543379
+      },
+      "ones_carry": {
+        "count": 334,
+        "accuracy": 0.6526946107784432,
+        "mae": 0.38023952095808383
+      },
+      "sum_100": {
+        "count": 20,
+        "accuracy": 0.45,
+        "mae": 0.55
+      },
+      "losses": {
+        "loss": 1.099461925150168,
+        "cross_entropy": 1.0960918117051173,
+        "ordinal": 0.0033700984921494516
+      }
+    }
+  },
+  {
+    "topology": "rewire-01",
+    "seed": 33,
+    "status": "complete",
+    "run": {
+      "epoch": 100,
+      "selectedEpoch": 100,
+      "updates": 2800
+    },
+    "graph": {
+      "dataset": "MaleCNS v1.0",
+      "node_policy": "annotated",
+      "selection": "superclass is assigned",
+      "published_neuron_count": 166691,
+      "neurons": 166700,
+      "raw_connection_rows": 151856684,
+      "selected_connection_rows_before_aggregation": 25582938,
+      "edges": 25582938,
+      "synaptic_contacts": 124177617,
+      "self_edges": 101,
+      "orientation": "rows are postsynaptic; cols are presynaptic",
+      "edge_threshold": null,
+      "annotations_sha256": "2177e246113e4cfbf1e7772ec37c6da1955ff22e8063d0b1f833101f99a9a3b2",
+      "edges_sha256": "e35da783d1c686b2b58b3b87cd6a403ae43bfcfba8bff28e08ef752c1a56afc1",
+      "graph_sha256": "19f6aea1174b9e23aee0b48a24bbab7b91daefea4c38193c7363cdd340f65ec9",
+      "sourceGraphSha256": "e906f5f47da85b625c3941a411882d507ff7383c98097ac07819a83ee998266a",
+      "control": "directed-degree-preserving-rewire",
+      "rewiring": {
+        "acceptedSwaps": 127914690,
+        "attemptedSwaps": 129651983,
+        "seed": 20260913,
+        "swapsPerEdge": 5,
+        "edgeOverlapFraction": 0.005942593458186859,
+        "inOutDegreesPreserved": true,
+        "duplicates": 0,
+        "selfLoops": 101,
+        "selfLoopPolicy": "existing self-loops fixed; no new self-loops",
+        "mixingNote": "finite double-edge-swap null; not claimed to be a uniform random graph"
+      }
+    },
+    "config": {
+      "seed": 33,
+      "data_seed": 20260912,
+      "interface_seed": 20260912,
+      "steps": 64,
+      "readout_steps": 4,
+      "alpha": 0.5,
+      "gain": 1.0,
+      "input_amplitude": 1.0,
+      "temperature": 0.1,
+      "input_group_size": 64,
+      "output_group_size": 32,
+      "ordinal_lambda": 1.0,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001,
+      "gradient_clip": 1.0,
+      "microbatch_size": 128,
+      "examples_per_update": 128,
+      "multiplication_mix": {
+        "nontrivial": 0.6,
+        "times_zero": 0.2,
+        "times_one": 0.2
+      },
+      "mode": "addition",
+      "max_epochs": 100,
+      "min_epochs": 20,
+      "patience": 15
+    },
+    "data": {
+      "trainingRows": 3584,
+      "validationRows": 775,
+      "testRows": 792,
+      "epochDefinition": "all addition training rows exactly once without replacement"
+    },
+    "baselines": {
+      "trainConstant": {
+        "answer": 99,
+        "count": 3584,
+        "accuracy": 0.022879464285714284,
+        "mae": 32.676339285714285
+      },
+      "validationConstant": {
+        "answer": 99,
+        "count": 775,
+        "accuracy": 0.01806451612903226,
+        "mae": 30.58967741935484
+      },
+      "testConstant": {
+        "answer": 99,
+        "count": 792,
+        "accuracy": 0.005050505050505051,
+        "mae": 32.74242424242424
+      }
+    },
+    "validationMetrics": {
+      "overall": {
+        "count": 775,
+        "accuracy": 0.752258064516129,
+        "mae": 0.28
+      },
+      "+": {
+        "count": 775,
+        "accuracy": 0.752258064516129,
+        "mae": 0.28
+      },
+      "no_ones_carry": {
+        "count": 442,
+        "accuracy": 0.7579185520361991,
+        "mae": 0.2918552036199095
+      },
+      "ones_carry": {
+        "count": 323,
+        "accuracy": 0.7430340557275542,
+        "mae": 0.26625386996904027
+      },
+      "sum_100": {
+        "count": 10,
+        "accuracy": 0.8,
+        "mae": 0.2
+      },
+      "losses": {
+        "loss": 0.9834172262683991,
+        "cross_entropy": 0.9806711164597542,
+        "ordinal": 0.0027461127411093442
+      }
+    },
+    "testMetrics": {
+      "overall": {
+        "count": 792,
+        "accuracy": 0.7247474747474747,
+        "mae": 0.3547979797979798
+      },
+      "+": {
+        "count": 792,
+        "accuracy": 0.7247474747474747,
+        "mae": 0.3547979797979798
+      },
+      "no_ones_carry": {
+        "count": 438,
+        "accuracy": 0.7465753424657534,
+        "mae": 0.3744292237442922
+      },
+      "ones_carry": {
+        "count": 334,
+        "accuracy": 0.7005988023952096,
+        "mae": 0.32934131736526945
+      },
+      "sum_100": {
+        "count": 20,
+        "accuracy": 0.65,
+        "mae": 0.35
+      },
+      "losses": {
+        "loss": 1.0281186573433154,
+        "cross_entropy": 1.0251091706632363,
+        "ordinal": 0.0030094799703231667
+      }
+    }
+  },
+  {
+    "topology": "rewire-01",
+    "seed": 44,
+    "status": "complete",
+    "run": {
+      "epoch": 100,
+      "selectedEpoch": 100,
+      "updates": 2800
+    },
+    "graph": {
+      "dataset": "MaleCNS v1.0",
+      "node_policy": "annotated",
+      "selection": "superclass is assigned",
+      "published_neuron_count": 166691,
+      "neurons": 166700,
+      "raw_connection_rows": 151856684,
+      "selected_connection_rows_before_aggregation": 25582938,
+      "edges": 25582938,
+      "synaptic_contacts": 124177617,
+      "self_edges": 101,
+      "orientation": "rows are postsynaptic; cols are presynaptic",
+      "edge_threshold": null,
+      "annotations_sha256": "2177e246113e4cfbf1e7772ec37c6da1955ff22e8063d0b1f833101f99a9a3b2",
+      "edges_sha256": "e35da783d1c686b2b58b3b87cd6a403ae43bfcfba8bff28e08ef752c1a56afc1",
+      "graph_sha256": "19f6aea1174b9e23aee0b48a24bbab7b91daefea4c38193c7363cdd340f65ec9",
+      "sourceGraphSha256": "e906f5f47da85b625c3941a411882d507ff7383c98097ac07819a83ee998266a",
+      "control": "directed-degree-preserving-rewire",
+      "rewiring": {
+        "acceptedSwaps": 127914690,
+        "attemptedSwaps": 129651983,
+        "seed": 20260913,
+        "swapsPerEdge": 5,
+        "edgeOverlapFraction": 0.005942593458186859,
+        "inOutDegreesPreserved": true,
+        "duplicates": 0,
+        "selfLoops": 101,
+        "selfLoopPolicy": "existing self-loops fixed; no new self-loops",
+        "mixingNote": "finite double-edge-swap null; not claimed to be a uniform random graph"
+      }
+    },
+    "config": {
+      "seed": 44,
+      "data_seed": 20260912,
+      "interface_seed": 20260912,
+      "steps": 64,
+      "readout_steps": 4,
+      "alpha": 0.5,
+      "gain": 1.0,
+      "input_amplitude": 1.0,
+      "temperature": 0.1,
+      "input_group_size": 64,
+      "output_group_size": 32,
+      "ordinal_lambda": 1.0,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001,
+      "gradient_clip": 1.0,
+      "microbatch_size": 128,
+      "examples_per_update": 128,
+      "multiplication_mix": {
+        "nontrivial": 0.6,
+        "times_zero": 0.2,
+        "times_one": 0.2
+      },
+      "mode": "addition",
+      "max_epochs": 100,
+      "min_epochs": 20,
+      "patience": 15
+    },
+    "data": {
+      "trainingRows": 3584,
+      "validationRows": 775,
+      "testRows": 792,
+      "epochDefinition": "all addition training rows exactly once without replacement"
+    },
+    "baselines": {
+      "trainConstant": {
+        "answer": 99,
+        "count": 3584,
+        "accuracy": 0.022879464285714284,
+        "mae": 32.676339285714285
+      },
+      "validationConstant": {
+        "answer": 99,
+        "count": 775,
+        "accuracy": 0.01806451612903226,
+        "mae": 30.58967741935484
+      },
+      "testConstant": {
+        "answer": 99,
+        "count": 792,
+        "accuracy": 0.005050505050505051,
+        "mae": 32.74242424242424
+      }
+    },
+    "validationMetrics": {
+      "overall": {
+        "count": 775,
+        "accuracy": 0.743225806451613,
+        "mae": 0.29419354838709677
+      },
+      "+": {
+        "count": 775,
+        "accuracy": 0.743225806451613,
+        "mae": 0.29419354838709677
+      },
+      "no_ones_carry": {
+        "count": 442,
+        "accuracy": 0.7194570135746606,
+        "mae": 0.3393665158371041
+      },
+      "ones_carry": {
+        "count": 323,
+        "accuracy": 0.7708978328173375,
+        "mae": 0.23839009287925697
+      },
+      "sum_100": {
+        "count": 10,
+        "accuracy": 0.9,
+        "mae": 0.1
+      },
+      "losses": {
+        "loss": 0.9979470299136254,
+        "cross_entropy": 0.9948756464066044,
+        "ordinal": 0.003071379907609474
+      }
+    },
+    "testMetrics": {
+      "overall": {
+        "count": 792,
+        "accuracy": 0.6957070707070707,
+        "mae": 0.3926767676767677
+      },
+      "+": {
+        "count": 792,
+        "accuracy": 0.6957070707070707,
+        "mae": 0.3926767676767677
+      },
+      "no_ones_carry": {
+        "count": 438,
+        "accuracy": 0.6757990867579908,
+        "mae": 0.45662100456621
+      },
+      "ones_carry": {
+        "count": 334,
+        "accuracy": 0.7095808383233533,
+        "mae": 0.3263473053892216
+      },
+      "sum_100": {
+        "count": 20,
+        "accuracy": 0.9,
+        "mae": 0.1
+      },
+      "losses": {
+        "loss": 1.0428207703311034,
+        "cross_entropy": 1.0395830875695353,
+        "ordinal": 0.0032376802215973535
+      }
+    }
+  },
+  {
+    "topology": "rewire-02",
+    "seed": 11,
+    "status": "complete",
+    "run": {
+      "epoch": 100,
+      "selectedEpoch": 98,
+      "updates": 2800
+    },
+    "graph": {
+      "dataset": "MaleCNS v1.0",
+      "node_policy": "annotated",
+      "selection": "superclass is assigned",
+      "published_neuron_count": 166691,
+      "neurons": 166700,
+      "raw_connection_rows": 151856684,
+      "selected_connection_rows_before_aggregation": 25582938,
+      "edges": 25582938,
+      "synaptic_contacts": 124177617,
+      "self_edges": 101,
+      "orientation": "rows are postsynaptic; cols are presynaptic",
+      "edge_threshold": null,
+      "annotations_sha256": "2177e246113e4cfbf1e7772ec37c6da1955ff22e8063d0b1f833101f99a9a3b2",
+      "edges_sha256": "e35da783d1c686b2b58b3b87cd6a403ae43bfcfba8bff28e08ef752c1a56afc1",
+      "graph_sha256": "bd84385bac1823096949556f1f4b538c667bc3692071fe0433ae87714877696e",
+      "sourceGraphSha256": "e906f5f47da85b625c3941a411882d507ff7383c98097ac07819a83ee998266a",
+      "control": "directed-degree-preserving-rewire",
+      "rewiring": {
+        "acceptedSwaps": 127914690,
+        "attemptedSwaps": 129651561,
+        "seed": 20260917,
+        "swapsPerEdge": 5,
+        "edgeOverlapFraction": 0.0058792700040941346,
+        "inOutDegreesPreserved": true,
+        "duplicates": 0,
+        "selfLoops": 101,
+        "selfLoopPolicy": "existing self-loops fixed; no new self-loops",
+        "mixingNote": "finite double-edge-swap null; not claimed to be a uniform random graph"
+      }
+    },
+    "config": {
+      "seed": 11,
+      "data_seed": 20260912,
+      "interface_seed": 20260912,
+      "steps": 64,
+      "readout_steps": 4,
+      "alpha": 0.5,
+      "gain": 1.0,
+      "input_amplitude": 1.0,
+      "temperature": 0.1,
+      "input_group_size": 64,
+      "output_group_size": 32,
+      "ordinal_lambda": 1.0,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001,
+      "gradient_clip": 1.0,
+      "microbatch_size": 128,
+      "examples_per_update": 128,
+      "multiplication_mix": {
+        "nontrivial": 0.6,
+        "times_zero": 0.2,
+        "times_one": 0.2
+      },
+      "mode": "addition",
+      "max_epochs": 100,
+      "min_epochs": 20,
+      "patience": 15
+    },
+    "data": {
+      "trainingRows": 3584,
+      "validationRows": 775,
+      "testRows": 792,
+      "epochDefinition": "all addition training rows exactly once without replacement"
+    },
+    "baselines": {
+      "trainConstant": {
+        "answer": 99,
+        "count": 3584,
+        "accuracy": 0.022879464285714284,
+        "mae": 32.676339285714285
+      },
+      "validationConstant": {
+        "answer": 99,
+        "count": 775,
+        "accuracy": 0.01806451612903226,
+        "mae": 30.58967741935484
+      },
+      "testConstant": {
+        "answer": 99,
+        "count": 792,
+        "accuracy": 0.005050505050505051,
+        "mae": 32.74242424242424
+      }
+    },
+    "validationMetrics": {
+      "overall": {
+        "count": 775,
+        "accuracy": 0.6064516129032258,
+        "mae": 0.42838709677419357
+      },
+      "+": {
+        "count": 775,
+        "accuracy": 0.6064516129032258,
+        "mae": 0.42838709677419357
+      },
+      "no_ones_carry": {
+        "count": 442,
+        "accuracy": 0.6357466063348416,
+        "mae": 0.416289592760181
+      },
+      "ones_carry": {
+        "count": 323,
+        "accuracy": 0.5634674922600619,
+        "mae": 0.44891640866873067
+      },
+      "sum_100": {
+        "count": 10,
+        "accuracy": 0.7,
+        "mae": 0.3
+      },
+      "losses": {
+        "loss": 1.0789841364276025,
+        "cross_entropy": 1.0758080001031198,
+        "ordinal": 0.0031761502282273385
+      }
+    },
+    "testMetrics": {
+      "overall": {
+        "count": 792,
+        "accuracy": 0.6881313131313131,
+        "mae": 0.3851010101010101
+      },
+      "+": {
+        "count": 792,
+        "accuracy": 0.6881313131313131,
+        "mae": 0.3851010101010101
+      },
+      "no_ones_carry": {
+        "count": 438,
+        "accuracy": 0.6735159817351598,
+        "mae": 0.4406392694063927
+      },
+      "ones_carry": {
+        "count": 334,
+        "accuracy": 0.688622754491018,
+        "mae": 0.33532934131736525
+      },
+      "sum_100": {
+        "count": 20,
+        "accuracy": 1.0,
+        "mae": 0.0
+      },
+      "losses": {
+        "loss": 1.0815411577321061,
+        "cross_entropy": 1.0782687308812382,
+        "ordinal": 0.003272415152892019
+      }
+    }
+  },
+  {
+    "topology": "rewire-02",
+    "seed": 22,
+    "status": "complete",
+    "run": {
+      "epoch": 100,
+      "selectedEpoch": 91,
+      "updates": 2800
+    },
+    "graph": {
+      "dataset": "MaleCNS v1.0",
+      "node_policy": "annotated",
+      "selection": "superclass is assigned",
+      "published_neuron_count": 166691,
+      "neurons": 166700,
+      "raw_connection_rows": 151856684,
+      "selected_connection_rows_before_aggregation": 25582938,
+      "edges": 25582938,
+      "synaptic_contacts": 124177617,
+      "self_edges": 101,
+      "orientation": "rows are postsynaptic; cols are presynaptic",
+      "edge_threshold": null,
+      "annotations_sha256": "2177e246113e4cfbf1e7772ec37c6da1955ff22e8063d0b1f833101f99a9a3b2",
+      "edges_sha256": "e35da783d1c686b2b58b3b87cd6a403ae43bfcfba8bff28e08ef752c1a56afc1",
+      "graph_sha256": "bd84385bac1823096949556f1f4b538c667bc3692071fe0433ae87714877696e",
+      "sourceGraphSha256": "e906f5f47da85b625c3941a411882d507ff7383c98097ac07819a83ee998266a",
+      "control": "directed-degree-preserving-rewire",
+      "rewiring": {
+        "acceptedSwaps": 127914690,
+        "attemptedSwaps": 129651561,
+        "seed": 20260917,
+        "swapsPerEdge": 5,
+        "edgeOverlapFraction": 0.0058792700040941346,
+        "inOutDegreesPreserved": true,
+        "duplicates": 0,
+        "selfLoops": 101,
+        "selfLoopPolicy": "existing self-loops fixed; no new self-loops",
+        "mixingNote": "finite double-edge-swap null; not claimed to be a uniform random graph"
+      }
+    },
+    "config": {
+      "seed": 22,
+      "data_seed": 20260912,
+      "interface_seed": 20260912,
+      "steps": 64,
+      "readout_steps": 4,
+      "alpha": 0.5,
+      "gain": 1.0,
+      "input_amplitude": 1.0,
+      "temperature": 0.1,
+      "input_group_size": 64,
+      "output_group_size": 32,
+      "ordinal_lambda": 1.0,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001,
+      "gradient_clip": 1.0,
+      "microbatch_size": 128,
+      "examples_per_update": 128,
+      "multiplication_mix": {
+        "nontrivial": 0.6,
+        "times_zero": 0.2,
+        "times_one": 0.2
+      },
+      "mode": "addition",
+      "max_epochs": 100,
+      "min_epochs": 20,
+      "patience": 15
+    },
+    "data": {
+      "trainingRows": 3584,
+      "validationRows": 775,
+      "testRows": 792,
+      "epochDefinition": "all addition training rows exactly once without replacement"
+    },
+    "baselines": {
+      "trainConstant": {
+        "answer": 99,
+        "count": 3584,
+        "accuracy": 0.022879464285714284,
+        "mae": 32.676339285714285
+      },
+      "validationConstant": {
+        "answer": 99,
+        "count": 775,
+        "accuracy": 0.01806451612903226,
+        "mae": 30.58967741935484
+      },
+      "testConstant": {
+        "answer": 99,
+        "count": 792,
+        "accuracy": 0.005050505050505051,
+        "mae": 32.74242424242424
+      }
+    },
+    "validationMetrics": {
+      "overall": {
+        "count": 775,
+        "accuracy": 0.48516129032258065,
+        "mae": 0.5483870967741935
+      },
+      "+": {
+        "count": 775,
+        "accuracy": 0.48516129032258065,
+        "mae": 0.5483870967741935
+      },
+      "no_ones_carry": {
+        "count": 442,
+        "accuracy": 0.49547511312217196,
+        "mae": 0.5542986425339367
+      },
+      "ones_carry": {
+        "count": 323,
+        "accuracy": 0.48297213622291024,
+        "mae": 0.5294117647058824
+      },
+      "sum_100": {
+        "count": 10,
+        "accuracy": 0.1,
+        "mae": 0.9
+      },
+      "losses": {
+        "loss": 1.1586339378356934,
+        "cross_entropy": 1.1547391589995353,
+        "ordinal": 0.0038947649864900496
+      }
+    },
+    "testMetrics": {
+      "overall": {
+        "count": 792,
+        "accuracy": 0.648989898989899,
+        "mae": 0.43434343434343436
+      },
+      "+": {
+        "count": 792,
+        "accuracy": 0.648989898989899,
+        "mae": 0.43434343434343436
+      },
+      "no_ones_carry": {
+        "count": 438,
+        "accuracy": 0.6666666666666666,
+        "mae": 0.4383561643835616
+      },
+      "ones_carry": {
+        "count": 334,
+        "accuracy": 0.6526946107784432,
+        "mae": 0.40718562874251496
+      },
+      "sum_100": {
+        "count": 20,
+        "accuracy": 0.2,
+        "mae": 0.8
+      },
+      "losses": {
+        "loss": 1.1145555045869615,
+        "cross_entropy": 1.111120804391726,
+        "ordinal": 0.0034346819380204185
+      }
+    }
+  },
+  {
+    "topology": "rewire-03",
+    "seed": 11,
+    "status": "complete",
+    "run": {
+      "epoch": 100,
+      "selectedEpoch": 88,
+      "updates": 2800
+    },
+    "graph": {
+      "dataset": "MaleCNS v1.0",
+      "node_policy": "annotated",
+      "selection": "superclass is assigned",
+      "published_neuron_count": 166691,
+      "neurons": 166700,
+      "raw_connection_rows": 151856684,
+      "selected_connection_rows_before_aggregation": 25582938,
+      "edges": 25582938,
+      "synaptic_contacts": 124177617,
+      "self_edges": 101,
+      "orientation": "rows are postsynaptic; cols are presynaptic",
+      "edge_threshold": null,
+      "annotations_sha256": "2177e246113e4cfbf1e7772ec37c6da1955ff22e8063d0b1f833101f99a9a3b2",
+      "edges_sha256": "e35da783d1c686b2b58b3b87cd6a403ae43bfcfba8bff28e08ef752c1a56afc1",
+      "graph_sha256": "4ab7dab2232613355b9952759c42892639a474b5075975bd53ec4dea41f741e9",
+      "sourceGraphSha256": "e906f5f47da85b625c3941a411882d507ff7383c98097ac07819a83ee998266a",
+      "control": "directed-degree-preserving-rewire",
+      "rewiring": {
+        "acceptedSwaps": 127914690,
+        "attemptedSwaps": 129649434,
+        "seed": 20260918,
+        "swapsPerEdge": 5,
+        "edgeOverlapFraction": 0.005940287233624222,
+        "inOutDegreesPreserved": true,
+        "duplicates": 0,
+        "selfLoops": 101,
+        "selfLoopPolicy": "existing self-loops fixed; no new self-loops",
+        "mixingNote": "finite double-edge-swap null; not claimed to be a uniform random graph"
+      }
+    },
+    "config": {
+      "seed": 11,
+      "data_seed": 20260912,
+      "interface_seed": 20260912,
+      "steps": 64,
+      "readout_steps": 4,
+      "alpha": 0.5,
+      "gain": 1.0,
+      "input_amplitude": 1.0,
+      "temperature": 0.1,
+      "input_group_size": 64,
+      "output_group_size": 32,
+      "ordinal_lambda": 1.0,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001,
+      "gradient_clip": 1.0,
+      "microbatch_size": 128,
+      "examples_per_update": 128,
+      "multiplication_mix": {
+        "nontrivial": 0.6,
+        "times_zero": 0.2,
+        "times_one": 0.2
+      },
+      "mode": "addition",
+      "max_epochs": 100,
+      "min_epochs": 20,
+      "patience": 15
+    },
+    "data": {
+      "trainingRows": 3584,
+      "validationRows": 775,
+      "testRows": 792,
+      "epochDefinition": "all addition training rows exactly once without replacement"
+    },
+    "baselines": {
+      "trainConstant": {
+        "answer": 99,
+        "count": 3584,
+        "accuracy": 0.022879464285714284,
+        "mae": 32.676339285714285
+      },
+      "validationConstant": {
+        "answer": 99,
+        "count": 775,
+        "accuracy": 0.01806451612903226,
+        "mae": 30.58967741935484
+      },
+      "testConstant": {
+        "answer": 99,
+        "count": 792,
+        "accuracy": 0.005050505050505051,
+        "mae": 32.74242424242424
+      }
+    },
+    "validationMetrics": {
+      "overall": {
+        "count": 775,
+        "accuracy": 0.45806451612903226,
+        "mae": 0.5832258064516129
+      },
+      "+": {
+        "count": 775,
+        "accuracy": 0.45806451612903226,
+        "mae": 0.5832258064516129
+      },
+      "no_ones_carry": {
+        "count": 442,
+        "accuracy": 0.4819004524886878,
+        "mae": 0.5769230769230769
+      },
+      "ones_carry": {
+        "count": 323,
+        "accuracy": 0.4117647058823529,
+        "mae": 0.6068111455108359
+      },
+      "sum_100": {
+        "count": 10,
+        "accuracy": 0.9,
+        "mae": 0.1
+      },
+      "losses": {
+        "loss": 1.171550966693509,
+        "cross_entropy": 1.1678694351257817,
+        "ordinal": 0.0036815183922167746
+      }
+    },
+    "testMetrics": {
+      "overall": {
+        "count": 792,
+        "accuracy": 0.6540404040404041,
+        "mae": 0.4431818181818182
+      },
+      "+": {
+        "count": 792,
+        "accuracy": 0.6540404040404041,
+        "mae": 0.4431818181818182
+      },
+      "no_ones_carry": {
+        "count": 438,
+        "accuracy": 0.6118721461187214,
+        "mae": 0.5205479452054794
+      },
+      "ones_carry": {
+        "count": 334,
+        "accuracy": 0.688622754491018,
+        "mae": 0.36826347305389223
+      },
+      "sum_100": {
+        "count": 20,
+        "accuracy": 1.0,
+        "mae": 0.0
+      },
+      "losses": {
+        "loss": 1.1323040157857567,
+        "cross_entropy": 1.1288030310110613,
+        "ordinal": 0.003500991091696602
+      }
+    }
+  },
+  {
+    "topology": "rewire-03",
+    "seed": 22,
+    "status": "complete",
+    "run": {
+      "epoch": 100,
+      "selectedEpoch": 97,
+      "updates": 2800
+    },
+    "graph": {
+      "dataset": "MaleCNS v1.0",
+      "node_policy": "annotated",
+      "selection": "superclass is assigned",
+      "published_neuron_count": 166691,
+      "neurons": 166700,
+      "raw_connection_rows": 151856684,
+      "selected_connection_rows_before_aggregation": 25582938,
+      "edges": 25582938,
+      "synaptic_contacts": 124177617,
+      "self_edges": 101,
+      "orientation": "rows are postsynaptic; cols are presynaptic",
+      "edge_threshold": null,
+      "annotations_sha256": "2177e246113e4cfbf1e7772ec37c6da1955ff22e8063d0b1f833101f99a9a3b2",
+      "edges_sha256": "e35da783d1c686b2b58b3b87cd6a403ae43bfcfba8bff28e08ef752c1a56afc1",
+      "graph_sha256": "4ab7dab2232613355b9952759c42892639a474b5075975bd53ec4dea41f741e9",
+      "sourceGraphSha256": "e906f5f47da85b625c3941a411882d507ff7383c98097ac07819a83ee998266a",
+      "control": "directed-degree-preserving-rewire",
+      "rewiring": {
+        "acceptedSwaps": 127914690,
+        "attemptedSwaps": 129649434,
+        "seed": 20260918,
+        "swapsPerEdge": 5,
+        "edgeOverlapFraction": 0.005940287233624222,
+        "inOutDegreesPreserved": true,
+        "duplicates": 0,
+        "selfLoops": 101,
+        "selfLoopPolicy": "existing self-loops fixed; no new self-loops",
+        "mixingNote": "finite double-edge-swap null; not claimed to be a uniform random graph"
+      }
+    },
+    "config": {
+      "seed": 22,
+      "data_seed": 20260912,
+      "interface_seed": 20260912,
+      "steps": 64,
+      "readout_steps": 4,
+      "alpha": 0.5,
+      "gain": 1.0,
+      "input_amplitude": 1.0,
+      "temperature": 0.1,
+      "input_group_size": 64,
+      "output_group_size": 32,
+      "ordinal_lambda": 1.0,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001,
+      "gradient_clip": 1.0,
+      "microbatch_size": 128,
+      "examples_per_update": 128,
+      "multiplication_mix": {
+        "nontrivial": 0.6,
+        "times_zero": 0.2,
+        "times_one": 0.2
+      },
+      "mode": "addition",
+      "max_epochs": 100,
+      "min_epochs": 20,
+      "patience": 15
+    },
+    "data": {
+      "trainingRows": 3584,
+      "validationRows": 775,
+      "testRows": 792,
+      "epochDefinition": "all addition training rows exactly once without replacement"
+    },
+    "baselines": {
+      "trainConstant": {
+        "answer": 99,
+        "count": 3584,
+        "accuracy": 0.022879464285714284,
+        "mae": 32.676339285714285
+      },
+      "validationConstant": {
+        "answer": 99,
+        "count": 775,
+        "accuracy": 0.01806451612903226,
+        "mae": 30.58967741935484
+      },
+      "testConstant": {
+        "answer": 99,
+        "count": 792,
+        "accuracy": 0.005050505050505051,
+        "mae": 32.74242424242424
+      }
+    },
+    "validationMetrics": {
+      "overall": {
+        "count": 775,
+        "accuracy": 0.40516129032258064,
+        "mae": 0.6503225806451612
+      },
+      "+": {
+        "count": 775,
+        "accuracy": 0.40516129032258064,
+        "mae": 0.6503225806451612
+      },
+      "no_ones_carry": {
+        "count": 442,
+        "accuracy": 0.38687782805429866,
+        "mae": 0.6968325791855203
+      },
+      "ones_carry": {
+        "count": 323,
+        "accuracy": 0.44272445820433437,
+        "mae": 0.5758513931888545
+      },
+      "sum_100": {
+        "count": 10,
+        "accuracy": 0.0,
+        "mae": 1.0
+      },
+      "losses": {
+        "loss": 1.274974223721412,
+        "cross_entropy": 1.2704007547901524,
+        "ordinal": 0.004573511284806074
+      }
+    },
+    "testMetrics": {
+      "overall": {
+        "count": 792,
+        "accuracy": 0.7222222222222222,
+        "mae": 0.35858585858585856
+      },
+      "+": {
+        "count": 792,
+        "accuracy": 0.7222222222222222,
+        "mae": 0.35858585858585856
+      },
+      "no_ones_carry": {
+        "count": 438,
+        "accuracy": 0.7077625570776256,
+        "mae": 0.4178082191780822
+      },
+      "ones_carry": {
+        "count": 334,
+        "accuracy": 0.7604790419161677,
+        "mae": 0.26646706586826346
+      },
+      "sum_100": {
+        "count": 20,
+        "accuracy": 0.4,
+        "mae": 0.6
+      },
+      "losses": {
+        "loss": 1.0256288864395835,
+        "cross_entropy": 1.0226407412326697,
+        "ordinal": 0.0029881471165954464
+      }
+    }
+  }
+]

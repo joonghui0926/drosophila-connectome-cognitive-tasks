@@ -1,0 +1,210 @@
+{
+  "audit": {
+    "path": "audit.json",
+    "sha256": "67462219b22c822f3b817b0ef78496d2c8d862253f66c4c786e645b686ac4bec"
+  },
+  "builder": {
+    "path": "scripts/build_language_v7_corpus.py",
+    "sha256": "5a594d651a34b92a85fba86eef0bc5045af9716c80f967193255455e00ad603d"
+  },
+  "claimScope": "controlled 100-word English, not unrestricted natural language",
+  "createdFor": "fixed-connectome grounded compositional language experiment",
+  "documentation": {
+    "path": "README.md",
+    "sha256": "6b97d53f04281cf487f6c14752f8e7821b55225eeea89540d3cb4246a324a463"
+  },
+  "files": {
+    "testComposition": {
+      "bytes": 194276,
+      "examples": 4096,
+      "modeCounts": {
+        "qa": 2048,
+        "report": 2048
+      },
+      "path": "test-composition.jsonl.gz",
+      "sha256": "75eaedf85f1ee0bb4031bc6a111d16b4592c29105d9c5f12c31be80d0b9303b9",
+      "templateCounts": {
+        "qa.after": 512,
+        "qa.detect": 512,
+        "qa.feel": 512,
+        "qa.first": 512,
+        "report.fly": 1024,
+        "report.self": 1024
+      }
+    },
+    "train": {
+      "bytes": 11343683,
+      "examples": 200000,
+      "modeCounts": {
+        "qa": 40000,
+        "report": 120000,
+        "text": 40000
+      },
+      "path": "train.jsonl.gz",
+      "sha256": "ee5748a487766f67f1ecc55934a911fff87b64e01a48317cfb6e362838599da5",
+      "templateCounts": {
+        "qa.action": 2222,
+        "qa.after": 2222,
+        "qa.before": 2222,
+        "qa.count": 2222,
+        "qa.detect": 2224,
+        "qa.feel": 2224,
+        "qa.first": 2222,
+        "qa.first_place": 2222,
+        "qa.last_place": 2222,
+        "qa.meaning": 2222,
+        "qa.reason": 2222,
+        "qa.same_kind": 2222,
+        "qa.same_leg": 2222,
+        "qa.same_side": 2222,
+        "qa.same_strength": 2222,
+        "qa.start": 2222,
+        "qa.stop": 2222,
+        "qa.strength": 2222,
+        "report.fly": 60000,
+        "report.self": 60000,
+        "text.contrast": 3636,
+        "text.count_four": 3636,
+        "text.count_three": 3636,
+        "text.dialogue": 3636,
+        "text.meaning": 3636,
+        "text.pulse": 3636,
+        "text.reason": 3636,
+        "text.side": 3636,
+        "text.signal": 3638,
+        "text.temporal": 3638,
+        "text.while": 3636
+      }
+    },
+    "trainUnique": {
+      "bytes": 6973813,
+      "deduplicationKey": "sensory scene + prompt + target; text records use prompt + target",
+      "examples": 119040,
+      "modeCounts": {
+        "qa": 36320,
+        "report": 70882,
+        "text": 11838
+      },
+      "path": "train-unique.jsonl.gz",
+      "sha256": "b6dcb2e64f3d6011de0afa5c9cbe0704995d50cb31d8fadd1fab59ccf7e47a58",
+      "templateCounts": {
+        "qa.action": 2135,
+        "qa.after": 2116,
+        "qa.before": 2117,
+        "qa.count": 1243,
+        "qa.detect": 1733,
+        "qa.feel": 1754,
+        "qa.first": 2130,
+        "qa.first_place": 2109,
+        "qa.last_place": 2111,
+        "qa.meaning": 2135,
+        "qa.reason": 2117,
+        "qa.same_kind": 2077,
+        "qa.same_leg": 1925,
+        "qa.same_side": 2122,
+        "qa.same_strength": 2116,
+        "qa.start": 2115,
+        "qa.stop": 2135,
+        "qa.strength": 2130,
+        "report.fly": 35395,
+        "report.self": 35487,
+        "text.contrast": 1340,
+        "text.count_four": 1336,
+        "text.count_three": 1340,
+        "text.dialogue": 3633,
+        "text.meaning": 38,
+        "text.pulse": 81,
+        "text.reason": 37,
+        "text.side": 2,
+        "text.signal": 20,
+        "text.temporal": 1337,
+        "text.while": 2674
+      }
+    },
+    "validationComposition": {
+      "bytes": 195564,
+      "examples": 4096,
+      "modeCounts": {
+        "qa": 2048,
+        "report": 2048
+      },
+      "path": "validation-composition.jsonl.gz",
+      "sha256": "b6fd2d368ad91e0bca10689b20967bd5abda6ef113207a0cbac1ee1a9764391d",
+      "templateCounts": {
+        "qa.after": 512,
+        "qa.detect": 512,
+        "qa.feel": 512,
+        "qa.first": 512,
+        "report.fly": 1024,
+        "report.self": 1024
+      }
+    },
+    "validationId": {
+      "bytes": 233405,
+      "examples": 4096,
+      "modeCounts": {
+        "qa": 818,
+        "report": 2460,
+        "text": 818
+      },
+      "path": "validation-id.jsonl.gz",
+      "sha256": "6cfa0cbbfcefa0ca490c26a47a96645c454a1087720476451d41aa6f6b9ec2e1",
+      "templateCounts": {
+        "qa.action": 44,
+        "qa.after": 46,
+        "qa.before": 44,
+        "qa.count": 46,
+        "qa.detect": 46,
+        "qa.feel": 46,
+        "qa.first": 46,
+        "qa.first_place": 46,
+        "qa.last_place": 46,
+        "qa.meaning": 44,
+        "qa.reason": 44,
+        "qa.same_kind": 44,
+        "qa.same_leg": 46,
+        "qa.same_side": 46,
+        "qa.same_strength": 46,
+        "qa.start": 46,
+        "qa.stop": 46,
+        "qa.strength": 46,
+        "report.fly": 1230,
+        "report.self": 1230,
+        "text.contrast": 74,
+        "text.count_four": 74,
+        "text.count_three": 74,
+        "text.dialogue": 74,
+        "text.meaning": 74,
+        "text.pulse": 74,
+        "text.reason": 74,
+        "text.side": 74,
+        "text.signal": 76,
+        "text.temporal": 76,
+        "text.while": 74
+      }
+    }
+  },
+  "generator": {
+    "path": "src/flystudy/language_v7_data.py",
+    "sha256": "78fcfd3bd18b4bfeafe132184e5b22b0f75a283dc800d0790c899c53c0fd7342"
+  },
+  "materializedAudit": {
+    "path": "materialized-audit.json",
+    "sha256": "80d868646ce534d631d202ec58744b90f276593ca88811dbc4bc1d51cc1618e3"
+  },
+  "revision": 2,
+  "samples": {
+    "path": "samples.md",
+    "sha256": "7b040d3449bc68f15d0bc1e51b58fd99521b489f65f950f9d438bb1c902af450"
+  },
+  "schema": 7,
+  "seed": 20260921,
+  "sourceSnapshot": {
+    "build_language_v7_corpus.py": "5a594d651a34b92a85fba86eef0bc5045af9716c80f967193255455e00ad603d",
+    "language_v4_data.py": "8844c86437c908e8368fd71762fcc2b3d770764dacc2508b7b18273ea4833cfa",
+    "language_v7_audit.py": "67fe2f44ff99845d3aa050b5d09a2a1f2592cc099be903e328702551adf554d2",
+    "language_v7_data.py": "78fcfd3bd18b4bfeafe132184e5b22b0f75a283dc800d0790c899c53c0fd7342",
+    "language_v7_eval.py": "ddcd691bfa0ea34d1da6480bce9ed1fd33adbcaef1a7274dd232a12aaf6ebb8c",
+    "language_v7_runtime.py": "4f0cbbd9fbe06a485b445fc0bba62aebbbf5c06bea8e7d470bc657845c375eba"
+  }
+}

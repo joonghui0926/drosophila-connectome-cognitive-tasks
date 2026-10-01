@@ -1,0 +1,124 @@
+{
+  "files": {
+    "testComposition": {
+      "answerLexicalWords": 39,
+      "duplicateExposures": 266,
+      "lossBearingLexicalWords": 39,
+      "qaAnswerLabels": {},
+      "records": 4096,
+      "sceneEventCounts": {
+        "2": 4096
+      },
+      "uniqueConditionalRecords": 3830
+    },
+    "train": {
+      "answerLexicalWords": 78,
+      "duplicateExposures": 80960,
+      "lossBearingLexicalWords": 100,
+      "qaAnswerLabels": {
+        "qa.before": {
+          "no": 1111,
+          "yes": 1111
+        },
+        "qa.count": {
+          "one": 1111,
+          "two": 1111
+        },
+        "qa.same_kind": {
+          "no": 1111,
+          "yes": 1111
+        },
+        "qa.same_leg": {
+          "no": 1111,
+          "yes": 1111
+        },
+        "qa.same_side": {
+          "no": 1111,
+          "yes": 1111
+        },
+        "qa.same_strength": {
+          "no": 1111,
+          "yes": 1111
+        }
+      },
+      "records": 200000,
+      "sceneEventCounts": {
+        "1": 31111,
+        "2": 161617,
+        "3": 3636,
+        "4": 3636
+      },
+      "uniqueConditionalRecords": 119040
+    },
+    "validationComposition": {
+      "answerLexicalWords": 39,
+      "duplicateExposures": 266,
+      "lossBearingLexicalWords": 39,
+      "qaAnswerLabels": {},
+      "records": 4096,
+      "sceneEventCounts": {
+        "2": 4096
+      },
+      "uniqueConditionalRecords": 3830
+    },
+    "validationId": {
+      "answerLexicalWords": 78,
+      "duplicateExposures": 971,
+      "lossBearingLexicalWords": 100,
+      "qaAnswerLabels": {
+        "qa.before": {
+          "no": 22,
+          "yes": 22
+        },
+        "qa.count": {
+          "one": 23,
+          "two": 23
+        },
+        "qa.same_kind": {
+          "no": 22,
+          "yes": 22
+        },
+        "qa.same_leg": {
+          "no": 23,
+          "yes": 23
+        },
+        "qa.same_side": {
+          "no": 23,
+          "yes": 23
+        },
+        "qa.same_strength": {
+          "no": 23,
+          "yes": 23
+        }
+      },
+      "records": 4096,
+      "sceneEventCounts": {
+        "1": 638,
+        "2": 3310,
+        "3": 74,
+        "4": 74
+      },
+      "uniqueConditionalRecords": 3125
+    }
+  },
+  "referenceSemantics": "all grounded reference answers pass independent evaluator",
+  "revision": 2,
+  "splitScope": "scene attributes and text prompts held out within familiar channel families",
+  "trainEvaluationOverlaps": {
+    "testComposition": {
+      "conditionalRecordOverlap": 0,
+      "sceneOverlap": 0,
+      "textPromptOverlap": 0
+    },
+    "validationComposition": {
+      "conditionalRecordOverlap": 0,
+      "sceneOverlap": 0,
+      "textPromptOverlap": 0
+    },
+    "validationId": {
+      "conditionalRecordOverlap": 0,
+      "sceneOverlap": 0,
+      "textPromptOverlap": 0
+    }
+  }
+}

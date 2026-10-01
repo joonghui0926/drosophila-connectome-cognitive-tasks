@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "drosophila-connectome-cognitive-tasks"
+version = "1.0.0"
+description = "Connectome-constrained recurrent networks for bounded addition and grounded relational language"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [
+  {name = "Joonghui Cho", email = "paul26@kaist.ac.kr"},
+  {name = "Minchan Kang", email = "mc.kang@kaist.ac.kr"},
+  {name = "Daeshik Kim"},
+]
+dependencies = [
+  "numpy>=2.0",
+  "psutil>=6.0",
+  "pyarrow>=17.0",
+  "scipy>=1.14",
+  "torch>=2.5",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8.3"]
+
+[project.urls]
+Repository = "https://github.com/joonghui0926/drosophila-connectome-cognitive-tasks"
+
+[project.scripts]
+flystudy = "flystudy.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+addopts = "-ra"
+testpaths = ["tests"]
+pythonpath = [".", "src"]
